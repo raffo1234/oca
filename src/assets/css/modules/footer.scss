@@ -1,0 +1,23 @@
+footer {
+
+}
+
+.footer--1 {
+  background-color: $color--global-light;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  .footer--1--button-big {
+    width: 240px;
+  }
+  .footer--1--nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer--1--button-social {
+    width: 53px;
+  }
+}
+
+.footer--2 {
+  background-color: $color--global;
+}

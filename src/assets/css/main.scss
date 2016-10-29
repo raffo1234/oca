@@ -1,0 +1,139 @@
+
+
+// CONTAINER
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// HERO
+
+.hero {
+  background-color: $color--global;
+  .hero-image {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    img {
+      height: auto;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      min-width: 100%;
+    }
+  }
+  .hero-bottom {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    p {
+      color: #fff;
+      font-size: pt(30);
+    }
+  }
+}
+
+
+// SECTION
+
+.section {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  &.section--lightgray {
+    background-color: $color--gray-light;
+  }
+}
+
+
+
+// CONTENT
+
+.sidebar {
+  width: 245px;
+}
+
+
+
+// POST
+
+.post {
+  margin-bottom: 30px;
+
+  .post--image {
+    margin-bottom: 25px;
+    width: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .post--date {
+    color: lighten($color--gray, 50%);
+    font-size: pt(13);
+    margin-bottom: 6px;
+  }
+  .post--calendar {
+    width: 40px;
+  }
+  .post--content {
+    padding-left: 25px;
+  }
+  .post--text {
+    font-size: pt(18);
+  }
+
+  // POST MINI
+  &.post--mini {
+    margin-bottom: 20px;
+
+    .post--image {
+      margin-bottom: 10px;
+    }
+    .post--calendar {
+      width: 20px;
+    }
+    .post--content {
+      padding-left: 12px;
+    }
+    .post--text {
+      font-size: pt(15);
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .post {
+    margin-bottom: 0;
+  }
+}
+
+
+// CITAS
+
+.cita {
+  background-color: #fff;
+  border-bottom: 2px solid $color--global-light;
+  font-size: pt(18);
+  max-width: 500px;
+  margin: 0 auto 26px;
+  position: relative;
+  @include border-radius(5px 5px 0 0);
+  &:after {
+    content: '';
+    top: 100%;
+    border: 16px solid transparent;
+    border-top-color: $color--global-light;
+    height: 0;
+    left: 50%;
+    margin-left: -16px;
+    position: absolute;
+    width: 0;
+  }
+  .cita--inner {
+      padding: 20px 30px;
+  }
+}
