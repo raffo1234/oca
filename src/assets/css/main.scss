@@ -74,17 +74,18 @@
 
 // CONTENT
 
-.sidebar {
-  width: 245px;
+.sidebar {}
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 245px;
+  }
 }
-
 
 
 // POST
 
 .post {
   margin-bottom: 30px;
-
   .post--image {
     margin-bottom: 25px;
     width: 100%;
@@ -111,7 +112,7 @@
   // POST MINI
   &.post--mini {
     margin-bottom: 20px;
-
+    display: inline-block;
     .post--image {
       margin-bottom: 10px;
     }

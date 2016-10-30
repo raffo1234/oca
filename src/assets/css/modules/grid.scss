@@ -1,5 +1,19 @@
-.row {
-  padding-right: 20px;
+.columns {
+  & > .display-table {
+    & > .display-table-cell {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .row {
+    padding-right: 20px;
+  }
+  .columns {
+    & > .display-table { display: table;
+      & > .display-table-cell { display: table-cell; }
+    }
+  }
 }
 .column {}
 .col-1-2 { width: 100%; }
