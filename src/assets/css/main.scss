@@ -31,7 +31,30 @@
     padding-top: 25px;
     p {
       color: #fff;
-      font-size: pt(30);
+      font-size: pt(26);
+    }
+    .display-table,
+    .display-table-cell {
+      display: block;
+      text-align: center;
+      &.align-left{ margin-bottom: 20px; }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    .hero-bottom {
+      .display-table { display: table; }
+      .display-table-cell { display: table-cell; }
+      .display-table-cell.align-left {
+        margin-bottom: 0;
+        text-align: left;
+      }
+      .display-table-cell.align-right { text-align: right; }
+      p {
+        font-size: pt(30);
+      }
     }
   }
 }
