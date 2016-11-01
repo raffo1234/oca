@@ -33,6 +33,11 @@ label.btn {
   font-size: pt(18);
 }
 
+.btn--medium {
+  font-size: pt(13);
+  padding: 10px 20px;
+}
+
 .btn-social {
   background-color: $color--global;
   height: 48px;
