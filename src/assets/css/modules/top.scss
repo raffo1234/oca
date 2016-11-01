@@ -2,3 +2,28 @@
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
+.top--left,
+.top--right {
+  width: 236px;
+}
+
+.top--info {
+  &.display-table {
+    width: auto;
+  }
+  .top--info-links {
+    padding-right: 10px;
+    width: 196px;
+    ul {
+      display: block;
+      li {
+        display: block;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

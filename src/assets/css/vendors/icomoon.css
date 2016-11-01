@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-perm_phone_msg:before {
+  content: "\e900";
+}
+.icon-envelope:before {
+  content: "\e901";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-mail:before {
+  content: "\e901";
+}
+.icon-letter:before {
+  content: "\e901";
+}
+.icon-contact:before {
+  content: "\e901";
+}
 .icon-facebook:before {
   content: "\ea90";
 }

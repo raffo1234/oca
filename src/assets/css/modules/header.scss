@@ -1,0 +1,28 @@
+.header {
+  background: $color--global;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  .header--nav {
+    display: block;
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: 30px;
+      a {
+        color: #fff;
+        display: block;
+        font-size: pt(13);
+        &:focus {
+          color: lighten($color--yellow, 5%);
+        }
+        &:hover {
+          color: lighten($color--yellow, 5%);
+        }
+        &:active,
+        &.active {
+          color: $color--yellow;
+        }
+      }
+    }
+  }
+}

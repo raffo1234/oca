@@ -1,0 +1,31 @@
+.link {
+  color: $color--global-light;
+  &.link--small {
+    font-size: pt(11);
+  }
+  &:focus {
+    color: lighten($color--global-light, 5%);
+  }
+  &:hover {
+    color: lighten($color--global-light, 5%);
+  }
+  &:active,
+  &.active {
+    color: darken($color--global-light, 3%);
+  }
+}
+
+.link--hasicon {
+  padding-left: 21px;
+  position: relative;
+  .icon {
+    font-size: 2.1rem;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 21px;
+  }
+  .text {
+    padding-left: 10px;
+  }
+}
