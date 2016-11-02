@@ -78,6 +78,8 @@
 
 
 
+
+
 // CONTENT
 
 .sidebar {}
@@ -175,4 +177,22 @@
 .page--title {
   padding-bottom: 24px;
   padding-top: 24px;
+}
+
+
+// SECTION ITEMS
+
+.message--item {
+  text-align: left;
+  margin-bottom: 10px;
+  p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .message--item {
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
