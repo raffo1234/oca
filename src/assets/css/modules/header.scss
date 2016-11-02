@@ -1,7 +1,7 @@
 .header {
   background: $color--global;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   .header--nav {
     display: block;
     overflow: hidden;
@@ -12,6 +12,8 @@
         color: #fff;
         display: block;
         font-size: pt(13);
+        padding-bottom: 4px;
+        padding-top: 4px;
         &:focus {
           color: lighten($color--yellow, 5%);
         }

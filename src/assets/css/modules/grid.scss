@@ -28,3 +28,21 @@
     width: 50%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .section-1-2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+    &.section--left {
+      padding-right: 15px;
+    }
+    &.section--right {
+      padding-left: 15px;
+    }
+  }
+}

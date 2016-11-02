@@ -63,8 +63,10 @@
 // SECTION
 
 .section {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  &.section--haspadding {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
   &.section--lightgray {
     background-color: $color--gray-light;
   }
@@ -160,4 +162,13 @@
   .cita--inner {
       padding: 20px 30px;
   }
+}
+
+
+
+// PAGE TITLE
+
+.page--title {
+  padding-bottom: 24px;
+  padding-top: 24px;
 }

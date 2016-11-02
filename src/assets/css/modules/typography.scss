@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: pt(15);
+  line-height: pt(22);
 }
 
 p {
@@ -28,7 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.24rem;
+  color: $color--global;
+  font-size: pt(32);
+  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -47,6 +50,9 @@ h2 {
     position: absolute;
     bottom: -10px;
     width: 90px;
+  }
+  &.h2--medium {
+    font-size: pt(24);
   }
   &.h2--mini:after {
     width: 45px;
@@ -76,7 +82,7 @@ h6 {
 }
 
 @media (min-width: 550px) {
-  h1 { font-size: 1.3rem; }
+  h1 { font-size: pt(36); }
 
   h2 { font-size: pt(18); }
 
