@@ -116,6 +116,10 @@
   .post--text {
     font-size: pt(18);
   }
+  .post--descriptioin {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 
   // POST MINI
   &.post--mini {
@@ -137,9 +141,14 @@
 }
 
 
+
+
 @media screen and (min-width: 768px) {
   .post {
     margin-bottom: 0;
+    .post--descriptioin {
+      padding-bottom: 50px;
+    }
   }
 }
 
