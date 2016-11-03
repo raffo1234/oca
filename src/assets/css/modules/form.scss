@@ -1,0 +1,22 @@
+input,
+textarea {
+  background-color: transparent;
+  border: 1px solid darken($color--gray-light, 10%);
+  display: block;
+  font: inherit;
+  line-height: inherit;
+  padding: 10px 15px;
+  width: 100%;
+  @include border-radius(6px);
+  &:hover {
+    border: 1px solid darken($color--gray-light, 15%);
+  }
+  &:focus {
+    border: 1px solid darken($color--gray-light, 20%);
+  }
+}
+
+textarea {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}

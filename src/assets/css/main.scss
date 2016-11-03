@@ -310,3 +310,51 @@
     padding-top: 0;
   }
 }
+
+// MAPA
+
+.map {
+  background-color: $color--gray-light;
+  height: 300px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .map{
+    height: 420px;
+  }
+}
+
+
+// CONTACT INFO
+
+.list-info {
+  li {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+.info {
+  .info__icon {
+    font-size: 40px;
+    width: 45px;
+  }
+  .info__text {
+    padding-left: 10px;
+  }
+}
+
+
+
+// FORM CONTACT
+
+.input-row {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.textarea-row {
+  margin-bottom: 20px;
+}

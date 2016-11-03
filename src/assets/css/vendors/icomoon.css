@@ -27,6 +27,18 @@
 .icon-perm_phone_msg:before {
   content: "\e900";
 }
+.icon-location:before {
+  content: "\e902";
+}
+.icon-pin:before {
+  content: "\e902";
+}
+.icon-map-marker:before {
+  content: "\e902";
+}
+.icon-marker:before {
+  content: "\e902";
+}
 .icon-envelope:before {
   content: "\e901";
 }
