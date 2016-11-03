@@ -405,11 +405,10 @@
       width: 90px;
     }
     .document__item__content {
-
       h2 {
         color: inherit;
         font-size: pt(15);
-        margin-bottom: 4px;
+        margin-bottom: 0;
         &:after {
           display: none;
         }
