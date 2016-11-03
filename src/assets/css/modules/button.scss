@@ -38,6 +38,19 @@ label.btn {
   padding: 10px 20px;
 }
 
+.btn--gray {
+  background-color: lighten($color--gray, 50%);
+  &:focus {
+    background-color: lighten($color--gray, 50%);
+  }
+  &:hover {
+    background-color: lighten($color--gray, 45%);
+  }
+  &:active {
+    background-color: lighten($color--gray, 48%);
+  }
+}
+
 .btn-social {
   height: 48px;
   font-size: 3rem;

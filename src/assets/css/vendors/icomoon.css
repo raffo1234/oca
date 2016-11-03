@@ -24,8 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-perm_phone_msg:before {
-  content: "\e900";
+.icon-document-text:before {
+  content: "\e903";
 }
 .icon-location:before {
   content: "\e902";
@@ -53,6 +53,9 @@
 }
 .icon-contact:before {
   content: "\e901";
+}
+.icon-perm_phone_msg:before {
+  content: "\e900";
 }
 .icon-facebook:before {
   content: "\ea90";
