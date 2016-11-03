@@ -13,11 +13,11 @@ html {
 }
 
 body {
+  color: $color--gray;
   font-size: pt(15);
 }
 
-p {
-  color: $color--gray;
+p, ul {
   line-height: pt(22);
 }
 

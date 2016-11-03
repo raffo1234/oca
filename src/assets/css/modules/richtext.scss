@@ -1,3 +1,12 @@
-p {
-  margin-bottom: 20px;
+.richtext {
+  p, ul {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 30px;
+    li {
+      list-style: disc;
+    }
+  }
 }
