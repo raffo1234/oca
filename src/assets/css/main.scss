@@ -74,8 +74,18 @@
   &.section--lightgray {
     background-color: $color--gray-light;
   }
+  &.section--citas {
+    margin-top: 40px;
+  }
 }
 
+@media screen and (min-width: 600px) {
+  .section {
+    &.section--citas {
+      margin-top: 100px;
+    }
+  }
+}
 
 
 
@@ -316,13 +326,14 @@
 .map {
   background-color: $color--gray-light;
   height: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .map{
     height: 420px;
+    margin-bottom: 60px;
   }
 }
 
@@ -330,13 +341,15 @@
 // CONTACT INFO
 
 .list-info {
+  padding-top: 60px;
   li {
-    display: inline-block;
+    display: block;
     margin-bottom: 10px;
   }
 }
 
 .info {
+  font-size: pt(13);
   .info__icon {
     font-size: 40px;
     width: 45px;
@@ -345,6 +358,14 @@
     padding-left: 10px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .list-info{
+    padding-top: 0;
+  }
+}
+
+
 
 
 
@@ -356,5 +377,5 @@
 }
 
 .textarea-row {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
