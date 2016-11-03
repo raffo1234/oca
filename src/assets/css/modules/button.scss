@@ -27,14 +27,13 @@
   &.btn--opacity {
     background-color: $color--global-light-rgba;
     &:focus {
-      background: lighten($color--global-light-rgba, 5%);
+      background-color: $color--global-light-rgba;
     }
     &:hover {
-      background: lighten($color--global-light-rgba, 5%);
+      background-color: $color--global-light-rgba-light;
     }
-    &:active,
-    &.active {
-      background: darken($color--global-light-rgba, 3%);
+    &:active {
+      background-color: $color--global-light-rgba-dark;
     }
   }
 
