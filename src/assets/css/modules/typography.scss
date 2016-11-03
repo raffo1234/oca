@@ -14,7 +14,6 @@ html {
 
 body {
   font-size: pt(15);
-  line-height: pt(22);
 }
 
 p {
@@ -29,9 +28,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
 }
 
-h1 {
+h1, .h1 {
   color: $color--global;
-  font-size: pt(32);
+  font-size: pt(29);
   font-weight: bold;
   line-height: 1.2;
 }
@@ -41,6 +40,7 @@ h2 {
   display: inline-block;
   font-size: pt(20);
   font-weight: bold;
+  line-height: pt(22);
   margin-bottom: 30px;
   position: relative;
   &:after {
