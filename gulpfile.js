@@ -6,6 +6,18 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 var cleanCss = require('gulp-clean-css');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
+var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
+
+var config = {
+  jsFiles: [
+    'src/assets/js/modernizr.touch.js',
+    'src/assets/js/jquery.min.js',
+    'src/assets/js/scripts.js'
+  ]
+};
 
 gulp.task('css', function () {
   gulp.src('src/assets/css/styles.scss')
@@ -27,11 +39,21 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('src/dist/fonts'));
 })
 
+gulp.task('js', function() {
+  return gulp.src(config.jsFiles)
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(concat('app.min.js'))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('src/dist/js'));
+});
+
 // Watch task
 gulp.task('watch', function() {
     gulp.watch('src/assets/css/***/**/*.css', ['css']);
     gulp.watch('src/assets/css/**/*.scss', ['css']);
     gulp.watch('src/assets/fonts/*', ['fonts']);
+    gulp.watch('src/assets/js/*.js', ['js']);
 });
 
-gulp.task('default', ['fonts', 'css', 'watch']);
+gulp.task('default', ['fonts', 'css', 'js', 'watch']);

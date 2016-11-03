@@ -224,5 +224,29 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      function initMap(){
+        var myLatLng = {lat: -12.046237, lng: -77.036983};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: myLatLng,
+          draggable: Modernizr.touch ? false : true,
+          zoomControl: Modernizr.touch ? false : true,
+          scrollwheel: Modernizr.touch ? false : true,
+          disableDoubleClickZoom: !Modernizr.touch ? false : true
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'OCA'
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?signed_in=false&callback=initMap"></script>
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+
   </body>
 </html>
