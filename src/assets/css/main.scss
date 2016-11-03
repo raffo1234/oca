@@ -278,5 +278,26 @@
   background-color: $color--global-light;
   height: 3px;
   width: 50px;
+}
 
+
+
+// BRAND RIGHT SIDEBAR
+
+.brand {
+  padding-top: 30px;
+}
+
+.brand__item {
+  margin-bottom: 30px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .brand{
+    padding-top: 0;
+  }
 }
