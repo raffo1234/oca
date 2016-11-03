@@ -1,0 +1,31 @@
+.pagging {
+  display: inline-block;
+  overflow: hidden;
+  li {
+    float: left;
+    margin-left: 6px;
+    a {
+      border: 1px solid darken($color--gray-light, 10%);
+      display: block;
+      font-size: pt(13);
+      font-weight: bold;
+      height: 30px;
+      text-align: center;
+      width: 30px;
+      @include border-radius(2px);
+      &:hover {
+        background-color: $color--gray-light;
+        border-color: darken($color--gray-light, 15%);
+      }
+      &:active {
+        background-color: darken($color--gray-light, 5%);
+        border-color: darken($color--gray-light, 15%);
+      }
+      &.active {
+        background-color: $color--global-light;
+        border-color: $color--global-light;
+        color: #fff;
+      }
+    }
+  }
+}
