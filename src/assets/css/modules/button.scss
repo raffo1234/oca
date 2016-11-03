@@ -79,6 +79,9 @@ label.btn {
 .btn--medium {
   font-size: pt(13);
   padding: 10px 20px;
+  &::after {
+    padding: 10px 20px !important;
+  }
 }
 
 .btn--gray {
