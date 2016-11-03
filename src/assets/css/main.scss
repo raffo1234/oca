@@ -196,3 +196,26 @@
     margin-bottom: 0;
   }
 }
+
+
+// CONOCENOS
+
+.section-conocenos {
+  &.section--left {
+    padding-bottom: 20px;
+  }
+  &.section--right {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-conocenos {
+    &.section--left {
+      padding-bottom: 0;
+    }
+    &.section--right {
+      padding-top: 0;
+    }
+  }
+}
