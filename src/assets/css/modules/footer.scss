@@ -19,11 +19,12 @@ footer {}
       color: #fff;
       display: inline-block;
       font-size: pt(10);
+      padding-bottom: 1px;
       margin: 0 3px;
       a {
-        &:hover {
+        &:hover,
+        &.active {
           border-bottom: 1px solid #fff;
-          padding-bottom: 1px;
         }
       }
     }

@@ -35,6 +35,9 @@ h2 {
   font-size: pt(20);
   font-weight: bold;
   line-height: pt(22);
+  &.h2--medium {
+    font-size: pt(24);
+  }
 }
 
 .underline {
@@ -51,10 +54,7 @@ h2 {
     bottom: -10px;
     width: 90px;
   }
-  &.h2--medium {
-    font-size: pt(24);
-  }
-  &.h2--mini:after {
+  &.underline--mini:after {
     width: 45px;
   }
 }
