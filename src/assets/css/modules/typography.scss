@@ -32,11 +32,14 @@ h1, .h1 {
 }
 
 h2 {
-  color: $color--global;
-  display: inline-block;
   font-size: pt(20);
   font-weight: bold;
   line-height: pt(22);
+}
+
+.underline {
+  color: $color--global;
+  display: inline-block;
   margin-bottom: 30px;
   position: relative;
   &:after {
@@ -56,40 +59,40 @@ h2 {
   }
 }
 
-h3 {
-  font-size: 1.0rem;
+h3, .h3 {
+  font-size: pt(18);
   line-height: 1.3;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 0.95rem;
+  font-size: pt(16);
   line-height: 1.35;
 }
 
 h5 {
-  font-size: 0.9rem;
+  font-size: pt(14);
   line-height: 1.5;
 }
 
 h6 {
-  font-size: 0.85rem;
+  font-size: pt(13);
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 @media (min-width: 550px) {
-  h1 { font-size: pt(36); }
+  h1, .h1 { font-size: pt(36); }
 
-  h2 { font-size: pt(18); }
+  h2, .h2 { font-size: pt(18); }
 
-  h3 { font-size: 1.1rem; }
+  h3, .h3 { font-size: pt(16); }
 
-  h4 { font-size: 1rem; }
+  h4, .h4 { font-size: pt(14); }
 
-  h5 { font-size: 0.95rem; }
+  h5, h5 { font-size: pt(12); }
 
-  h6 { font-size: 0.9rem; }
+  h6, .h6 { font-size: pt(11); }
 
 }
 

@@ -15,6 +15,7 @@ var config = {
   jsFiles: [
     'src/assets/js/modernizr.touch.js',
     'src/assets/js/jquery.min.js',
+    'src/assets/js/owl.carousel.min.js',
     'src/assets/js/scripts.js'
   ]
 };

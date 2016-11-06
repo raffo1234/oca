@@ -38,17 +38,6 @@
     height: 420px;
     overflow: hidden;
     position: relative;
-    & > img {
-      height: auto;
-      left: 50%;
-      opacity: 0;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      min-width: 100%;
-      z-index: 2;
-      @include transition(opacity .5s);
-    }
     .loader-wrapper {
       height: 100%;
       left: 0;
@@ -90,6 +79,31 @@
   }
 }
 
+.hero-slider {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  .hero-slider__item {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    img {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .owl-stage-outer {
+    height: 100%;
+    width: 100%;
+  }
+  .owl-stage {
+    height: 100%;
+  }
+  .owl-item {
+    height: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -158,10 +172,18 @@
   margin-bottom: 30px;
   .post--image {
     margin-bottom: 25px;
+    overflow: hidden;
     width: 100%;
     img {
       max-width: 100%;
       width: 100%;
+      @include scale(1);
+      @include transition(transform 1.5s);
+    }
+    &:hover {
+      img {
+        @include scale(1.05);
+      }
     }
   }
   .post--date {
@@ -175,7 +197,8 @@
   .post--content {
     padding-left: 25px;
   }
-  .post--text {
+  .post--text, h1 {
+    color: inherit;
     font-size: pt(18);
   }
   .post--descriptioin {
@@ -196,7 +219,7 @@
     .post--content {
       padding-left: 12px;
     }
-    .post--text {
+    .post--text, h3, h4 {
       font-size: pt(15);
     }
   }

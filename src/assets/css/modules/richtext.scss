@@ -9,6 +9,7 @@
     li {
       padding-left: 20px;
       position: relative;
+      margin-bottom: 1rem;
       &:before {
         background-color: $color--global;
         content: '';

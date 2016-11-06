@@ -14,11 +14,11 @@
     background: lighten($color--global-light, 5%);
   }
   &:hover {
-    background: lighten($color--global-light, 5%);
+    background: darken($color--global-light, 5%);
   }
   &:active,
   &.active {
-    background: darken($color--global-light, 3%);
+    background: darken($color--global-light, 6%);
   }
   .txt {
     padding-left: 12px;
@@ -109,10 +109,10 @@ label.btn {
     background-color: lighten($color--gray, 50%);
   }
   &:hover {
-    background-color: lighten($color--gray, 45%);
+    background-color: $color--global;
   }
   &:active {
-    background-color: lighten($color--gray, 48%);
+    background-color: $color--global-light;
   }
 }
 
