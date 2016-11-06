@@ -14,11 +14,11 @@
     background: lighten($color--global-light, 5%);
   }
   &:hover {
-    background: darken($color--global-light, 5%);
+    background: lighten($color--global-light, 5%);
   }
   &:active,
   &.active {
-    background: darken($color--global-light, 6%);
+    background: darken($color--global-light, 3%);
   }
   .txt {
     padding-left: 12px;
@@ -30,10 +30,10 @@
       background-color: $color--global-light-rgba;
     }
     &:hover {
-      background-color: $color--global-light-rgba-light;
+      background-color: $color--global-light-rgba-dark;
     }
     &:active {
-      background-color: $color--global-light-rgba-dark;
+      background-color: darken($color--global-light-rgba-dark, 5%);
     }
   }
 
