@@ -20,3 +20,20 @@ textarea {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
+input.error,
+textarea.error {
+  border-color: lighten(red, 5%);
+  &:hover {
+    border-color: red;
+  }
+  &:focus {
+    border-color: darken(red, 5%);
+  }
+}
+
+label.error {
+  color: red;
+  font-size: 1.1rem;
+  margin: .3rem 0;
+}

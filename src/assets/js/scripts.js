@@ -52,3 +52,11 @@ function loaderHome() {
       setTimeout(function(){ btn_2.addClass('active'); }, 1600);
 
 }
+
+
+// ADD RULE REGEX TO VALIDATION JQUERY PLUGIN
+
+$.validator.addMethod("regex", function (value, element, regexp) {
+      var re = new RegExp(regexp);
+      return this.optional(element) || re.test(value);
+  }, "");
