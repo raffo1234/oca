@@ -519,3 +519,18 @@
     }
   }
 }
+
+
+// TOP FIXED
+
+.top-fixed {
+  .top {
+    margin-bottom: 55px;
+  }
+  .header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}

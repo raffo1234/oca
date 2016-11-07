@@ -3,8 +3,24 @@
 $(document).ready(function(){
   loaderHome();
   homeSlider();
+  menuFixed();
 });
 
+function menuFixed(){
+  var header = $('.header'),
+      topHeight = $('.top').outerHeight(),
+      body = $('body');
+
+  $(window).scroll(function(){
+    var winScrollTop = $(this).scrollTop();
+
+    if(winScrollTop >= topHeight) {
+      body.addClass('top-fixed');
+    } else {
+      body.removeClass('top-fixed');
+    }
+  })
+}
 
 function homeSlider(){
   var ele = $('.owl-carousel');
