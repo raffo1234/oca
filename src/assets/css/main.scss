@@ -478,6 +478,14 @@
       font-size: 60px;
       text-align: center;
       width: 90px;
+      &:hover {
+        background-color: darken($color--gray-light, 3%);
+        color: $color--global-light;
+      }
+      &:active {
+        background-color: darken($color--gray-light, 6%);
+        color: darken($color--global-light, 5%);
+      }
     }
     .document__item__content {
       h2 {
