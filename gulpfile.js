@@ -44,7 +44,9 @@ gulp.task('fonts', function() {
 gulp.task('js', function() {
   return gulp.src(config.jsFiles)
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    .pipe(uglify().on('error', function(error){
+      console.log(error);
+    }))
     .pipe(concat('app.min.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('src/dist/js'));

@@ -1,14 +1,29 @@
 'use strict';
 
 $(document).ready(function(){
-
   homeSlider();
   menuFixed();
+  // sectionAppear();
 });
 
 $(window).on('load', function(){
   loaderHome();
 });
+
+function sectionAppear(){
+  var ele = $('.appear');
+
+  $(window).scroll(function(){
+    var self = $(this);
+    var winScrollTop = self.scrollTop();
+    console.log(winScrollTop);
+    ele.map(function(i, n){
+      if(winScrollTop  >= $(n).offset().top + 1000) {
+        $(n).addClass('active');
+      }
+    });
+  });
+}
 
 function menuFixed(){
   var header = $('.header'),
