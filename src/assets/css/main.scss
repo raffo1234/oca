@@ -371,8 +371,19 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 50%;
-    img {
+    .team__item__img {
       margin-bottom: 18px;
+      overflow: hidden;
+      width: 100%;
+      img {
+        @include scale(1);
+        @include transition(transform 0.35s);
+      }
+      &:hover {
+        img {
+          @include scale(1.15);
+        }
+      }
     }
     h3 {
       font-size: pt(13);
