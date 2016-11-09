@@ -1,9 +1,13 @@
 'use strict';
 
 $(document).ready(function(){
-  loaderHome();
+
   homeSlider();
   menuFixed();
+});
+
+$(window).on('load', function(){
+  loaderHome();
 });
 
 function menuFixed(){
@@ -42,11 +46,13 @@ function homeSlider(){
 }
 
 function loaderHome() {
-  var ele = $('.js-hero-image'),
+  var ele = $('.hero-slider'),
       originalImage = ele.find('.img');
 
   var btn_1 = $('.js-button-1'),
       btn_2 = $('.js-button-2');
+
+      ele.addClass('active');
 
       setTimeout(function(){ btn_1.addClass('active'); }, 800);
       setTimeout(function(){ btn_2.addClass('active'); }, 1600);

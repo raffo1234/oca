@@ -50,7 +50,7 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: -5rem 0 0 -5rem;
+        margin: -5px 0 0 -5px;
       }
     }
     &:hover {
@@ -88,9 +88,14 @@
 
 .hero-slider {
   height: 100%;
+  opacity: 0;
   position: relative;
   width: 100%;
   z-index: 2;
+  @include transition(opacity .3s);
+  &.active {
+    opacity: 1;
+  }
   .owl-prev,
   .owl-next {
     color: #fff;
@@ -124,6 +129,7 @@
     height: 100%;
     position: relative;
     width: 100%;
+
     img {
       opacity: 0;
       visibility: hidden;
