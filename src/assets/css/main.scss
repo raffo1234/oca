@@ -53,6 +53,12 @@
         margin: -5rem 0 0 -5rem;
       }
     }
+    &:hover {
+      .owl-prev,
+      .owl-next {
+        opacity: 1;
+      }
+    }
   }
   .hero-image.active {
     img {
@@ -77,6 +83,7 @@
       &.align-left{ margin-bottom: 20px; }
     }
   }
+
 }
 
 .hero-slider {
@@ -84,6 +91,35 @@
   position: relative;
   width: 100%;
   z-index: 2;
+  .owl-prev,
+  .owl-next {
+    color: #fff;
+    font-size: 5.6rem;
+    margin-top: -40px;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    @include transition(opacity .3s);
+    &:after {
+      content: '';
+      font-family: 'icomoon' !important;
+    }
+  }
+
+  .owl-prev {
+    left: 10px;
+    &:after {
+      content: '\e905';
+    }
+  }
+  .owl-next {
+    right: 10px;
+    &:after {
+      content: '\e904';
+    }
+  }
   .hero-slider__item {
     height: 100%;
     position: relative;

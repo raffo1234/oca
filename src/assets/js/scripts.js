@@ -28,7 +28,7 @@ function homeSlider(){
   ele.owlCarousel({
     loop: true,
     margin: 0,
-    nav: false,
+    nav: true,
     items: 1,
     lazyLoad: true,
     smartSpeed: 650,
@@ -36,8 +36,8 @@ function homeSlider(){
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     mouseDrag: false,
-    touchDrag: false
-
+    touchDrag: false,
+    navText: ["",""]
   });
 }
 
