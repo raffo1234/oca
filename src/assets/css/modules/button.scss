@@ -27,13 +27,13 @@
   &.btn--opacity {
     background-color: $color--global-light-rgba;
     &:focus {
-      background-color: $color--global-light-rgba;
+      background-color: $color--global-light;
     }
     &:hover {
-      background-color: $color--global-light-rgba-dark;
+      background-color: $color--global-light;
     }
     &:active {
-      background-color: darken($color--global-light-rgba-dark, 5%);
+      background-color: darken($color--global-light, 5%);
     }
   }
 
@@ -86,10 +86,44 @@ label.btn {
 }
 
 .btn--biggest {
-  font-size: pt(20);
-  padding: 15px 30px;
-  @include border-radius(6px);
+  font-size: pt(14);
+  padding: 10px 20px;
+  @include border-radius(3px);
+  .ico {
+    img {
+      width: 35px;
+    }
+  }
 }
+
+@media screen and (min-width: 480px) {
+  .btn--biggest {
+    font-size: pt(16);
+    padding: 10px 25px;
+    width: auto;
+    @include border-radius(4px);
+    .ico {
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn--biggest {
+    font-size: pt(20);
+    padding: 15px 30px;
+    @include border-radius(6px);
+    .ico {
+      img {
+        width: 45px;
+      }
+    }
+  }
+}
+
+
 
 .btn--big {
   font-size: pt(18);

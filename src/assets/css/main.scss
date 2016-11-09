@@ -178,11 +178,11 @@
       max-width: 100%;
       width: 100%;
       @include scale(1);
-      @include transition(transform 1.5s);
+      @include transition(transform 0.35s);
     }
     &:hover {
       img {
-        @include scale(1.05);
+        @include scale(1.15);
       }
     }
   }
