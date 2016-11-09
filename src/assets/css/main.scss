@@ -595,3 +595,34 @@
     width: 100%;
   }
 }
+
+
+// EFFECT APPEAR
+
+$distance: 20px;
+.appear {
+  // opacity: 0;
+  position: relative;
+  @include transition(transform .35s, opacity .35s);
+  &.appear--left-to-right {
+    @include translate(-$distance, 0);
+  }
+  &.appear--right-to-left {
+    @include translate($distance, 0);
+  }
+  &.appear--bottom-to-top {
+    @include translate(0, -$distance);
+  }
+  // &.active {
+  //   opacity: 1;
+  //   &.appear--left-to-right {
+  //     @include translate(0, 0);
+  //   }
+  //   &.appear--right-to-left {
+  //     @include translate(0, 0);
+  //   }
+  //   &.appear--bottom-to-top {
+  //     @include translate(0, 0);
+  //   }
+  // }
+}

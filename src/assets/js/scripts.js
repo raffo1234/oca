@@ -3,7 +3,7 @@
 $(document).ready(function(){
   homeSlider();
   menuFixed();
-  // sectionAppear();
+  appear();
 });
 
 $(window).on('load', function(){
@@ -78,6 +78,29 @@ function loaderHome() {
 // ADD RULE REGEX TO VALIDATION JQUERY PLUGIN
 
 $.validator.addMethod("regex", function (value, element, regexp) {
-      var re = new RegExp(regexp);
-      return this.optional(element) || re.test(value);
-  }, "");
+    var re = new RegExp(regexp);
+    return this.optional(element) || re.test(value);
+}, "");
+
+
+// APPEAR EFFECT
+
+function appear() {
+  console.log('hola');
+  var ele = $('.appear');
+
+  if (Modernizr.touch) {
+      ele.addClass('active');
+  } else {
+
+    ele.map(function(i, n){
+      console.log($(n));
+      $(n).waypoint(function () {
+          $(n).addClass('active');
+      }, {offset: '88%'});
+    });
+
+
+
+  }
+}

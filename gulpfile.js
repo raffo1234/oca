@@ -17,6 +17,7 @@ var config = {
     'src/assets/js/jquery.min.js',
     'src/assets/js/owl.carousel.min.js',
     'src/assets/js/jquery.validate.min.js',
+    'src/assets/js/jquery.waypoints.min.js',
     'src/assets/js/scripts.js'
   ]
 };
