@@ -3,7 +3,6 @@
 $(document).ready(function(){
   appear();
   homeSlider();
-  // loaderSlider();
   menuFixed();
 });
 
@@ -43,19 +42,6 @@ function homeSlider(){
   var ele = $('.owl-carousel'),
   item_slider = $('.hero-slider__item');
 
-  item_slider.map(function(i, n){
-    style = n.currentStyle || window.getComputedStyle(n, false),
-    bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-
-    // $("<img/>")
-    //   .attr("src", bi)
-    //   .on('load', function() {
-    //     $(n).addClass('active');
-    //   })
-    //   .on('error', function() { console.log("error loading image"); })
-
-  });
-
   ele.owlCarousel({
     loop: true,
     margin: 0,
@@ -70,20 +56,6 @@ function homeSlider(){
     touchDrag: false,
     navText: ["",""]
   });
-}
-
-function loaderSlider() {
-  var ele = $('.hero-slider'),
-    item_slider = $('.hero-slider__item');
-
-  var btn_1 = $('.js-button-1'),
-      btn_2 = $('.js-button-2');
-
-      ele.addClass('active');
-
-      setTimeout(function(){ btn_1.addClass('active'); }, 800);
-      setTimeout(function(){ btn_2.addClass('active'); }, 1600);
-
 }
 
 
