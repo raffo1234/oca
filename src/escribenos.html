@@ -399,6 +399,7 @@
           setTimeout(function(){
             modal__inner.addClass('active');
             $(form).find(":submit").removeClass('disabled');
+            $(form)[0].reset();
           }, 10);
         }, 1000);
         // ajax ends
