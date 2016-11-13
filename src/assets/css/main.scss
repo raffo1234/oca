@@ -246,7 +246,9 @@
     padding-bottom: 20px;
     padding-top: 20px;
   }
+}
 
+@media screen and (min-width: 600px) {
   // POST MINI
   &.post--mini {
     margin-bottom: 20px;
@@ -256,6 +258,9 @@
     }
     .post--calendar {
       width: 20px;
+      img {
+        width: 20px;
+      }
     }
     .post--content {
       padding-left: 12px;
@@ -266,12 +271,9 @@
   }
 }
 
-
-
-
 @media screen and (min-width: 768px) {
   .post {
-    margin-bottom: 0;
+
     .post--descriptioin {
       padding-bottom: 50px;
     }

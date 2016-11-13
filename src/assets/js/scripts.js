@@ -6,7 +6,6 @@ $(document).ready(function(){
   menuFixed();
 });
 
-
 function sectionAppear(){
   var ele = $('.appear');
 
