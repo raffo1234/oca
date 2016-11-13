@@ -88,14 +88,10 @@
 
 .hero-slider {
   height: 100%;
-  opacity: 0;
   position: relative;
   width: 100%;
   z-index: 2;
   @include transition(opacity .3s);
-  &.active {
-    opacity: 1;
-  }
   .owl-prev,
   .owl-next {
     color: #fff;
@@ -106,7 +102,6 @@
     position: absolute;
     top: 50%;
     z-index: 5;
-    @include transition(opacity .3s);
     &:after {
       content: '';
       font-family: 'icomoon' !important;
@@ -127,9 +122,13 @@
   }
   .hero-slider__item {
     height: 100%;
+    // opacity: 0;
     position: relative;
     width: 100%;
-
+    @include transition(opacity .35s);
+    &.active {
+      opacity: 1;
+    }
     img {
       opacity: 0;
       visibility: hidden;

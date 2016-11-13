@@ -1,14 +1,12 @@
 'use strict';
 
 $(document).ready(function(){
-  homeSlider();
-  menuFixed();
   appear();
+  homeSlider();
+  // loaderSlider();
+  menuFixed();
 });
 
-$(window).on('load', function(){
-  loaderHome();
-});
 
 function sectionAppear(){
   var ele = $('.appear');
@@ -16,7 +14,7 @@ function sectionAppear(){
   $(window).scroll(function(){
     var self = $(this);
     var winScrollTop = self.scrollTop();
-    console.log(winScrollTop);
+
     ele.map(function(i, n){
       if(winScrollTop  >= $(n).offset().top + 1000) {
         $(n).addClass('active');
@@ -42,7 +40,21 @@ function menuFixed(){
 }
 
 function homeSlider(){
-  var ele = $('.owl-carousel');
+  var ele = $('.owl-carousel'),
+  item_slider = $('.hero-slider__item');
+
+  item_slider.map(function(i, n){
+    style = n.currentStyle || window.getComputedStyle(n, false),
+    bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+    // $("<img/>")
+    //   .attr("src", bi)
+    //   .on('load', function() {
+    //     $(n).addClass('active');
+    //   })
+    //   .on('error', function() { console.log("error loading image"); })
+
+  });
 
   ele.owlCarousel({
     loop: true,
@@ -60,9 +72,9 @@ function homeSlider(){
   });
 }
 
-function loaderHome() {
+function loaderSlider() {
   var ele = $('.hero-slider'),
-      originalImage = ele.find('.img');
+    item_slider = $('.hero-slider__item');
 
   var btn_1 = $('.js-button-1'),
       btn_2 = $('.js-button-2');
@@ -86,7 +98,6 @@ $.validator.addMethod("regex", function (value, element, regexp) {
 // APPEAR EFFECT
 
 function appear() {
-  console.log('hola');
   var ele = $('.appear');
 
   if (Modernizr.touch) {
@@ -94,7 +105,7 @@ function appear() {
   } else {
 
     ele.map(function(i, n){
-      console.log($(n));
+
       $(n).waypoint(function () {
           $(n).addClass('active');
       }, {offset: '88%'});
