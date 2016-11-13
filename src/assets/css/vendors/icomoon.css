@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cross:before {
+  content: "\e906";
+}
 .icon-keyboard_arrow_right:before {
   content: "\e904";
 }
@@ -32,6 +35,9 @@
 }
 .icon-perm_phone_msg:before {
   content: "\e900";
+}
+.icon-close:before {
+  content: "\e907";
 }
 .icon-document-text:before {
   content: "\e903";

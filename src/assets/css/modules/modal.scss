@@ -1,0 +1,45 @@
+.modal {
+  background-color: rgba(0,0,0,.35);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  .modal__inner {
+    background-color: #fff;
+    opacity: 0;
+    padding: 40px;
+    position: relative;
+    @include border-radius(3px);
+    @include translate(0, 30px);
+    @include box-shadow(0, 0, 10px, rgba(0,0,0,0.1));
+    @include transition(transform .85s .5s, opacity .85s .5s);
+    .btn--close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  }
+  &.active {
+    display: block;
+    .modal__inner {
+      &.active {
+        opacity: 1;
+        @include translate(0, 0);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    .modal__inner {
+      .btn--close {
+        right: 20px;
+        top: 20px;
+      }
+    }
+  }
+}

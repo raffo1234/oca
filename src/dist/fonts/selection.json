@@ -4,6 +4,35 @@
     {
       "icon": {
         "paths": [
+          "M810.667 170.667q18.333 0 30.5 12.167t12.167 30.5q0 18-12.333 30.333l-268.667 268.333 268.667 268.333q12.333 12.333 12.333 30.333 0 18.333-12.167 30.5t-30.5 12.167q-18 0-30.333-12.333l-268.333-268.667-268.333 268.667q-12.333 12.333-30.333 12.333-18.333 0-30.5-12.167t-12.167-30.5q0-18 12.333-30.333l268.667-268.333-268.667-268.333q-12.333-12.333-12.333-30.333 0-18.333 12.167-30.5t30.5-12.167q18 0 30.333 12.333l268.333 268.667 268.333-268.667q12.333-12.333 30.333-12.333z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "cross"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "name": "cross",
+        "prevSize": 24,
+        "code": 59654
+      },
+      "setIdx": 0,
+      "setId": 9,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M366 698l196-196-196-196 60-60 256 256-256 256z"
         ],
         "attrs": [
@@ -21,13 +50,13 @@
       ],
       "properties": {
         "order": 1,
-        "id": 1,
+        "id": 0,
         "name": "keyboard_arrow_right",
         "prevSize": 24,
         "code": 59652
       },
-      "setIdx": 0,
-      "setId": 5,
+      "setIdx": 2,
+      "setId": 7,
       "iconIdx": 0
     },
     {
@@ -50,13 +79,13 @@
       ],
       "properties": {
         "order": 2,
-        "id": 0,
+        "id": 1,
         "name": "keyboard_arrow_left",
         "prevSize": 24,
         "code": 59653
       },
-      "setIdx": 0,
-      "setId": 5,
+      "setIdx": 2,
+      "setId": 7,
       "iconIdx": 1
     },
     {
@@ -79,13 +108,42 @@
       ],
       "properties": {
         "order": 1,
-        "id": 0,
+        "id": 2,
         "name": "perm_phone_msg",
         "prevSize": 24,
         "code": 59648
       },
       "setIdx": 2,
-      "setId": 3,
+      "setId": 7,
+      "iconIdx": 2
+    },
+    {
+      "icon": {
+        "paths": [
+          "M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "close"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 2,
+        "name": "close",
+        "prevSize": 24,
+        "code": 59655
+      },
+      "setIdx": 4,
+      "setId": 5,
       "iconIdx": 0
     },
     {
@@ -114,7 +172,7 @@
         "code": 59651
       },
       "setIdx": 1,
-      "setId": 4,
+      "setId": 8,
       "iconIdx": 0
     },
     {
@@ -146,7 +204,7 @@
         "code": 59650
       },
       "setIdx": 1,
-      "setId": 4,
+      "setId": 8,
       "iconIdx": 1
     },
     {
@@ -179,7 +237,7 @@
         "code": 59649
       },
       "setIdx": 1,
-      "setId": 4,
+      "setId": 8,
       "iconIdx": 2
     },
     {
@@ -208,7 +266,7 @@
         "code": 60048
       },
       "setIdx": 3,
-      "setId": 2,
+      "setId": 6,
       "iconIdx": 0
     }
   ],

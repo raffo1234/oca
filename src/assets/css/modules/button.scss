@@ -8,8 +8,31 @@
   font-size: pt(14);
   outline: 0;
   padding: 1.8rem 3rem;
+  position: relative;
   white-space: nowrap;
   @include border-radius(3px);
+  .ico--loading {
+    opacity: 0;
+    margin-left: -12px;
+    margin-top: -16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  &.disabled,
+  &.disabled,
+  &.disabled:hover {
+    .ico--loading {
+      opacity: 1;
+    }
+    &::after {
+      content: '';
+      opacity: 0;
+    }
+    span {
+      opacity: 0;
+    }
+  }
   &:focus {
     background: lighten($color--global-light, 5%);
   }
@@ -23,7 +46,19 @@
   .txt {
     padding-left: 12px;
   }
-
+  &.btn--close {
+    color: #fff;
+    font-size: pt(20);
+    height: 40px;
+    padding: 0;
+    width: 40px;
+    @include border-radius(50%);
+    @include rotate(0);
+    @include transition(transform .3s);
+    &:hover {
+      @include rotate(180);
+    }
+  }
   &.btn--opacity {
     background-color: $color--global-light-rgba;
     &:focus {

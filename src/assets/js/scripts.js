@@ -4,6 +4,7 @@ $(document).ready(function(){
   appear();
   homeSlider();
   menuFixed();
+  modal();
 });
 
 function sectionAppear(){
@@ -90,8 +91,32 @@ function appear() {
           $(n).addClass('active');
       }, {offset: '88%'});
     });
-
-
-
   }
+}
+
+
+
+// MODAL
+
+function modal() {
+  var modal = $('.js--modal'),
+    modal__inner = $('.modal__inner'),
+    btn__open = $('.button--open-modal'),
+    btn__close = $('.button--close-modal');
+
+    btn__close.on('click', function(){
+      modal__inner.removeClass('active');
+      setTimeout(function(){
+        modal.removeClass('active');
+      }, 100);
+    });
+
+    $('body').on('click', function(){
+      modal__inner.removeClass('active');
+      modal.removeClass('active');
+    });
+
+    modal__inner.on('click', function(e){
+      e.stopPropagation();
+    })
 }

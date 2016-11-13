@@ -28,8 +28,8 @@
   -webkit-transform: $transforms;
 }
 
-@mixin rotate($degrees) {
-    @include transform(rotate(#{$degress}deg));
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
 }
 
 @mixin translate ($x, $y) {
