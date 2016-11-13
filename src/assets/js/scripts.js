@@ -41,6 +41,9 @@ function homeSlider(){
   var ele = $('.owl-carousel'),
   item_slider = $('.hero-slider__item');
 
+  var btn_1 = $('.js-button-1'),
+  btn_2 = $('.js-button-2');
+
   ele.owlCarousel({
     loop: true,
     margin: 0,
@@ -53,8 +56,14 @@ function homeSlider(){
     animateIn: 'fadeIn',
     mouseDrag: false,
     touchDrag: false,
-    navText: ["",""]
+    navText: ["",""],
+    onInitialize: function(){
+      setTimeout(function(){ btn_1.addClass('active'); }, 800);
+      setTimeout(function(){ btn_2.addClass('active'); }, 1600);
+    }
   });
+
+
 }
 
 
