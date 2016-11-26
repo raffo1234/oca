@@ -393,13 +393,23 @@
     }
     h3 {
       font-size: pt(13);
-      margin-bottom: 5px;
+      margin-bottom: 6px;
       text-transform: uppercase;
     }
-    i {
+    .career {
       color: lighten($color--gray, 3%);
+      margin-bottom: 6px;
+    }
+    .email {
+      color: $color--global;
       display: inline-block;
       margin-bottom: 20px;
+      &:hover {
+        color: lighten($color--global, 5%);
+      }
+      &:active {
+        color: darken($color--global, 2%);
+      }
     }
   }
 }
