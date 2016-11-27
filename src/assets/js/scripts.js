@@ -104,18 +104,21 @@ function modal() {
     btn__open = $('.button--open-modal'),
     btn__close = $('.button--close-modal');
 
-    btn__close.on('click', function(){
-      modal__inner.removeClass('active');
-      setTimeout(function(){
-        modal.removeClass('active');
-      }, 100);
+    btn__open.on('click', function(){
+      modal.addClass('active');
+      modal__inner.addClass('active');
     });
 
-    $('body').on('click', function(){
+    btn__close.on('click', function(){
       modal__inner.removeClass('active');
       modal.removeClass('active');
     });
 
+    modal.on('click', function(){
+      modal.removeClass('active');
+      modal__inner.removeClass('active');
+    });
+    
     modal__inner.on('click', function(e){
       e.stopPropagation();
     })

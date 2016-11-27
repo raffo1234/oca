@@ -409,11 +409,9 @@
         // ajax starts
         setTimeout(function(){
           modal.addClass('active');
-          setTimeout(function(){
-            modal__inner.addClass('active');
-            $(form).find(":submit").removeClass('disabled');
-            $(form)[0].reset();
-          }, 10);
+          modal__inner.addClass('active');
+          $(form).find(":submit").removeClass('disabled');
+          $(form)[0].reset();
         }, 1000);
         // ajax ends
 
